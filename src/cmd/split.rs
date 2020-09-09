@@ -6,10 +6,10 @@ use channel;
 use csv;
 use threadpool::ThreadPool;
 
-use CliResult;
-use config::{Config, Delimiter};
-use index::Indexed;
-use util::{self, FilenameTemplate};
+use crate::CliResult;
+use crate::config::{Config, Delimiter};
+use crate::index::Indexed;
+use crate::util::{self, FilenameTemplate};
 
 static USAGE: &'static str = "
 Splits the given CSV data into chunks.

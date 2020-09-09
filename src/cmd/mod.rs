@@ -14,6 +14,7 @@ pub mod sample;
 pub mod search;
 pub mod select;
 pub mod slice;
+pub mod snake;
 pub mod sort;
 pub mod split;
 pub mod stats;

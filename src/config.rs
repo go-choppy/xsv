@@ -8,12 +8,12 @@ use std::ops::Deref;
 use std::path::PathBuf;
 
 use csv;
-use index::Indexed;
+use crate::index::Indexed;
 use serde::de::{Deserializer, Deserialize, Error};
 
-use CliResult;
-use select::{SelectColumns, Selection};
-use util;
+use crate::CliResult;
+use crate::select::{SelectColumns, Selection};
+use crate::util;
 
 
 #[derive(Clone, Copy, Debug)]

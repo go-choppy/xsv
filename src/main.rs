@@ -60,6 +60,7 @@ macro_rules! command_list {
     search      Search CSV data with regexes
     select      Select columns from CSV
     slice       Slice records from CSV
+    snake       Make fileds' name as the snake case.
     sort        Sort CSV data
     split       Split CSV data into many files
     stats       Compute basic statistics
@@ -157,6 +158,7 @@ enum Command {
     Search,
     Select,
     Slice,
+    Snake,
     Sort,
     Split,
     Stats,
@@ -192,6 +194,7 @@ impl Command {
             Command::Search => cmd::search::run(argv),
             Command::Select => cmd::select::run(argv),
             Command::Slice => cmd::slice::run(argv),
+            Command::Snake => cmd::snake::run(argv),
             Command::Sort => cmd::sort::run(argv),
             Command::Split => cmd::split::run(argv),
             Command::Stats => cmd::stats::run(argv),
